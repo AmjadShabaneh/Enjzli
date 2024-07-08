@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <!-- Add this line to include FontAwesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @vite('resources/css/app.css')
+    <title>حسابي</title>
+</head>
+<body dir="rtl">
+<div class=" mx-auto mt-0 border-b-2 fixed w-full pt-10 text-center bg-white ">
+    
+    <nav class="border-gray-200 mr-[35rem] mb-4">
+    <div class="container mx-auto flex flex-wrap items-center justify-between">
+       
+        <div class="hidden md:block w-full md:w-auto" id="mobile-menu">
+        <ul class="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
+            <li>
+            <a href="/search" class="bg-blue-700 md:bg-transparent text-white block pl-3 pr-4 py-2 md:text-blue-700 md:p-0 rounded focus:outline-none" aria-current="page">البحث </a>
+            </li>
+            <li class=" mr-10">
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="text-gray-700 mr-10 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 font-medium flex items-center justify-between w-full md:w-auto">الحساب <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+                <!-- Dropdown menu -->
+                <div id="dropdownNavbar" class="hidden bg-white text-base z-10 list-none divide-y  divide-gray-100 rounded shadow my-4 w-44">
+                    <ul class="py-1" aria-labelledby="dropdownLargeButton">
+                    <li>
+                        <a href="/account" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">اعدادات الحساب</a>
+                    </li>
+                    <li>
+                        <a href="/passwordpage" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">كلمة المرور</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">احصائيات</a>
+                    </li>
+                    </ul>
+                    <div class="py-1">
+                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">تسجيل الخروج</a>
+                    </div>
+                </div>
+                
+            </li>
+         
+            <li>
+            <a href="#" class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0">اضافة طلب</a>
+            </li>
+            <li>
+            <a href="#" class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0">طلباتي</a>
+            </li>
+            
+        </ul>
+        </div>
+    </div>
+    </nav>
+
+</div>
+    <div class="main grid grid-cols-6 ">
+   <!-- @include('pages/sidebar') -->
+   <section class=" side-bar col-span-1 w-full min-h-screen bg-slate-100">
+    <div class=' flex-row justify-center p-4 mt-32'>
+        <div class=" w-full p-2  bg-sky-600 mx-auto my-4 rounded-lg text-white ">
+        <i class="fa-solid fa-house ml-8 mr-3"></i>
+الرئيسية
+        </div>
+        <a href="/notes">
+        <div class=" w-full p-2 bg-white mx-auto my-4 rounded-lg text-sky-600 hover:bg-sky-400 hover:text-white duration-1000">
+        <i class="fa-regular fa-bell ml-8 mr-3"></i>  الاشعارات  
+        </div></a>
+        <a href="/create_portfoilo">
+        <div class=" w-full p-2  bg-white mx-auto my-4 rounded-lg text-sky-600 hover:bg-sky-400 hover:text-white duration-1000">
+        <i class="fa-solid fa-screwdriver-wrench ml-8 mr-3"></i>
+        الأعمال 
+        </div></a>
+        <div class=" w-full p-2  bg-white mx-auto my-4 rounded-lg text-sky-600 hover:bg-sky-400 hover:text-white duration-1000">
+        <i class="fa-solid fa-chart-simple  ml-8 mr-3"></i>
+        التحليلات
+        </div>
+    </div>
+    </section>
+
+    <section class=" col-span-5 w-full min-h-screen bg-sky-100 p-10">
+    <div class=" mt-14">
+       <h1 class=" text-sky-700 font-bold text-3xl ">   الإعدادات  </h1>
+
+        <div class=" w-full mt-8 border-b-4 grid grid-cols-2">
+            
+            <div class=" col-span-1 border-b-4 -mb-1 border-sky-700 font-semibold text-center">معلومات الحساب</div>
+            <a href=" /passwordpage ">
+            <div class=" col-span-1 border-b-4 -mb-1 text-gray-400 font-semibold text-center hover:border-sky-500 hover:text-black duration-1000"> كلمة المرور </div>
+        </a>
+        </div>
+    </div>
+<form action="" method="post">
+    @csrf
+    
+    <div class="ml-10 mt-10 text-slate-600  inline-flex justify-center items-center ">
+
+    <div class=" ml-3 "> صورة الحساب </div>
+    <div class="flex relative items-center shadow-md shadow-blue-200 justify-center mb-4 rounded-full bg-sky-200 h-24 w-24 ">
+        <label for="file-input" class="cursor-pointer">
+            <i class="fas fa-image text-4xl text-sky-500 "></i>
+
+            <input type="file" id="file-input" class="rounded-full bg-sky-300 h-24 w-24 hidden" />
+        </label>
+        <button class="absolute -left-0 -top-4 py-0.5 px-1.5 block bg-sky-500 mt-20 rounded-full">
+        <span class="relative"> 
+            <i class="fas fa-pencil-alt text-xl text-white"></i>
+             </span>
+        </a></button>
+    </div>
+    
+   <div class=" flex-col ">
+   
+
+    <button class=" mr-10 mt-6 ">
+    <a href="" class=" rounded px-5 py-2.5 overflow-hidden group bg-red-600 relative hover:bg-gradient-to-r hover:from-red-500 hover:to-red-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-red-400 transition-all ease-out duration-300">
+<span class="absolute right-0 w-8 h-32  transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
+<span class="relative">  حذف  </span>
+</a></button>
+
+</div>
+
+    </div>
+
+    <div class=" flex flex-col justify-start  ml-10 mt-5" >
+    <label for="fullname" class=" float-right  text-slate-600 mb-2"> الأسم الكامل</label>
+        <input type="text" class=" border-2 border-gray-300 rounded-lg w-2/5 h-10 p-4 focus:outline-sky-700" name="fullname">
+    </div>
+
+    <div class=" flex flex-col  justify-start  ml-10 mt-4" >
+    <label for="email" class=" float-right  text-slate-600 mb-2"> البريد الاكتروني</label>
+        <input type="email" class=" border-2 border-gray-300 rounded-lg w-2/5 h-10 p-4 focus:outline-sky-700" name="email">
+    </div>
+
+    <div class=" flex flex-col justify-start  ml-10 mt-4" >
+    <label for="pnumber" class=" float-right  text-slate-600 mb-2"> رقم الهاتف </label>
+        <input type="tel" class=" border-2 border-gray-300 rounded-lg w-2/5 h-10 p-4 focus:outline-sky-700" name="pnumber">
+    </div>
+
+    <div class=" flex flex-col justify-start  ml-10 mt-4" >
+    <label for="city" class=" float-right  text-slate-600 mb-2"> المدينة</label>
+    <select data-te-select-init class="border-2 border-gray-300 rounded-md   w-2/5 h-10 p-4  " name=" city ">
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+  <option value="4">Four</option>
+  <option value="5">Five</option>
+  <option value="6">Six</option>
+  <option value="7">Seven</option>
+  <option value="8">Eight</option>
+</select>
+    </div>
+    <div class=" flex flex-col justify-start  ml-10 mt-4" >
+    <label for="service" class=" float-right  text-slate-600 mb-2"> الخدمة </label>
+    <select data-te-select-init class="border-2 border-gray-300 rounded-md w-2/5 h-10 p-4 " name=" service ">
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+  <option value="4">Four</option>
+  <option value="5">Five</option>
+  <option value="6">Six</option>
+  <option value="7">Seven</option>
+  <option value="8">Eight</option>
+</select>
+    </div>
+
+<div class="flex justify-center">
+    <button type=" submit " >
+        <a href="" class=" rounded px-5 py-2.5 inline-block mt-4  overflow-hidden group bg-green-500 relative hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300">
+        <span class="absolute right-0 w-8  h-32  transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
+        <span class="relative"> حفظ </span>
+        </a>
+        </button>
+</div>
+</form>
+    
+    </section>
+</div>
+@include('pages/footer')
+</body>
+</html>
