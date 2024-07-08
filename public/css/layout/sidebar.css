@@ -1,0 +1,278 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 22px;
+}
+
+.user-img{
+    width: 50px;
+    height: 50px;
+    border-radius:100%;
+    border: 1px solid #eee;
+    z-index: 10;
+    background-size: cover;
+    background-position: -10px;
+  
+    
+}
+.user-name{
+    font-size: 20px;
+    font-family: "avenir heavy";
+}
+
+
+.sidebar{
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    right: 0px;
+    height: 100vh;
+    width: 80px;
+    background-color: #323335;
+    border-left: 1px solid rgb(255, 255, 255, 0.5); 
+    padding: 0.4rem 0.8rem;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active ~ .main-content{
+    right: 250px;
+    width: calc(100% - 250px);
+}
+
+.sidebar.active {
+    width: 250px;
+}
+
+.sidebar .top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar #btn{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    font-size: 1.2rem;
+    line-height: 50px;
+    cursor: pointer;
+    z-index: 10;
+
+}
+
+.sidebar.active #btn{
+    right: 80%;
+}
+
+.site-logo{
+    width: 36px;
+    height: 36px;
+    margin-left: 8px;
+
+}
+
+.sidebar .top .logo {
+    color: white;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 10;
+
+}
+
+.sidebar.active .top .logo {
+    opacity: 1;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    z-index: 10;
+
+}
+
+.user p {
+    color: white;
+    opacity: 1;
+    margin-right: 1rem;
+    font-size: 16px;
+    z-index: 10;
+
+}
+
+.bold{
+    font-family: "avenir heavy";
+    z-index: 10;
+
+}
+
+.sidebar p {
+    opacity: 0;
+}
+
+.sidebar.active p {
+    opacity: 1;
+}
+
+.sidebar ul li {
+    position: relative;
+    list-style-type: none;
+    height: 50px;
+    width: 90%;
+    margin: 8px auto;
+    line-height: 40px;
+    z-index: 10;
+
+}
+
+.sidebar ul li a {
+    color: #ADADAD;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 0.8rem;
+    padding: 8px;
+    transition: all 0.2s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: rgb(255, 255, 255, 0.2);
+    color: white;
+}
+
+.sidebar ul li a:hover .side-icons{
+    filter: brightness(10);
+}
+
+.side-icons{
+    min-width: 24px;
+    text-align: center ;
+    height: 24px;
+    line-height: 50px;
+
+}
+
+.sidebar .nav-item{
+    display: none;
+    opacity: 0;
+    margin-right: 16px;
+}
+
+.sidebar.active .nav-item{
+    display:block;
+    opacity: 1;
+}
+
+.sidebar ul li .tooltip {
+    position: absolute;
+    right: -20px;
+    width: 200px;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    background-color: #323335;
+    box-shadow: 0 0.5rem 0.8rem rgba(0,0,0,0.2);
+    border-radius: .6rem;
+    padding: .4rem 1.2rem;
+    line-height: 1.8rem;
+    z-index: 20;
+    display: none;
+}
+
+.sidebar ul li:hover .tooltip {
+    display:block;
+}
+
+.sidebar.active ul li .tooltip {
+    display: none;
+}
+
+.main-content{
+    position: relative;
+    min-height: 100vh;
+    top: 0;
+    right: 80px;
+    transition: all 0.5s ease;
+    width: calc(100% - 80px);
+    padding:32px;
+    box-sizing: border-box;
+}
+
+.bg-cyc{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s ease;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#crc-1{
+    width: 400px;
+    height: 400px;
+    background-color: #DE3434;
+    border-radius: 100%;
+    filter: blur(200px);
+    z-index: 1;
+    margin-left: 1000px;
+    position: absolute;
+    right:100px;
+    top: 100px;
+}
+
+#crc-2{
+    width: 200px;
+    height: 200px;
+    background-color: #D9D9D9;
+    border-radius: 100%;
+    filter: blur(200px);
+    z-index: 1;
+    position: absolute;
+    right:50px;
+    bottom: 100px;
+}
+
+.nav-header{
+    color: rgb(173, 173, 173, 0.5);
+    font-size: 16px;
+}
+
+.sidebar.active .nav-header{
+    font-size: 22px;
+}
+
+.sidebar .nav-div{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar.active .nav-div{
+    width: 100%;
+    height: 30px;
+    display: block;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#exit3{
+    align-self: flex-end;
+}
+
+.message-nav{
+    opacity: 1;
+}

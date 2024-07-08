@@ -1,0 +1,261 @@
+*{
+    box-sizing: border-box;
+}
+#Container{
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 100%;
+    color: rgba(var(--clr-text));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contant{
+    width: 100%;
+    max-width: 800px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+                    /*  Main  */
+#Main{
+    width: 100%;
+    max-width: 500px;
+    height: fit-content;
+    padding: 32px;
+    background-color: rgba(var(--clr-main));
+    border-radius: 24px 0px 0px 24px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 30px 0px rgba(var(--clr-shadow));
+    border-right: 1px solid rgba(var(--clr-text), 0.3);
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header{
+    font-family: "avenir black";
+    font-size: 32px;
+}
+
+form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 24px;
+}
+#logout-form{
+   
+    margin-top: -45px;
+}
+
+label{
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.input-div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input, select{
+    background-color: rgba(var(--clr-second));
+    border: 1px solid rgba(var(--clr-text), 0.1);
+    color: rgba(var(--clr-text));
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 18px;
+    padding-right: 8px;
+    margin-top: 8px;
+    font-family: "avenir regular";
+    transition: all 0.1s ease;
+}
+
+.sm{
+    width: 48%;
+}
+
+select:focus, input:focus{
+    outline: none !important;
+    background-color: rgba(var(--clr-main));
+    border: 1px solid rgba(var(--clr-text), 0.2);
+}
+
+input[type='password'] {
+    font-family: Verdana;
+    letter-spacing: 0.125em;
+}
+
+input[type="file"]{
+    width:150px;
+    height:150px;
+    border-radius:150px;
+    cursor: pointer;
+    opacity: 1;
+    background-color: rgba(var(--clr-text));
+    background-image: url("../../img/photo.png");
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding:0px;
+    margin: 0px;
+    text-indent: -999em;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type="file"]:hover{
+    opacity: 0.7;
+}
+
+button{
+    width:100%;
+    height:48px;
+    font-size: 24px;
+    color: rgba(var(--clr-text));
+    font-family: 'Avenir Heavy';
+    background-color:rgba(var(--clr-cta));
+    border:0px solid;
+    cursor:pointer;
+    border-radius:8px ;
+    margin-top: 32px;
+    transition: 0.2s;
+
+}
+
+button:hover{
+    background-color:rgba(var(--clr-ctaHover));
+}
+
+
+
+
+                    /*  SidePhoto  */
+.sidephoto{
+    width: 50%;
+    background-image: url("../../img/Admins.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px 24px 24px 0px;
+}
+
+
+
+
+                    /*  Menu  */
+#menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#landmark{
+    font-family: 'Avenir Black';
+    font-size: 32px;
+    margin: 32px;
+
+}
+                        /*  Menu / Profile  */
+#profile{
+    display: flex;
+    flex-direction: row;
+    line-height: 20px;
+    align-items: center;
+    margin: 32px;
+}
+
+#pic{
+    width: 56px;
+    height: 56px;
+    border-radius: 150px;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin-left: 8px;
+}
+
+#name{
+    color: rgba(var(--clr-text));
+    font-family: 'avenir regular';
+    font-size: 16px;
+    
+}
+
+#logout{
+    color: rgba(var(--clr-text));
+    font-family: 'avenir regular';
+    opacity: 0.4;
+    font-size: 16px;
+}
+
+#logout:hover { 
+    opacity: 0.5; 
+}
+
+                    /*  Links  */
+a{
+    color: rgba(var(--clr-text));
+}
+
+a:link { 
+    text-decoration: none;
+}
+
+a:visited { 
+    text-decoration: none;
+}
+
+a:hover { 
+    text-decoration: none;
+}
+
+a:active { 
+    text-decoration: none;
+}
+
+h3{
+    margin-top: 16px;
+    margin-bottom: -8px;
+}
+
+@media screen and (max-width: 768px) {
+    .contant{
+        flex-direction: column-reverse;
+    }
+
+    .sidephoto{
+        width: 100%;
+        height: 150px;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    #Main{
+        width: 100%;
+        max-width: fit-content;
+        height: fit-content;
+        padding: 24px;
+        border-radius: 0px 0px 20px 20px;
+        border-top: 1px solid rgba(var(--clr-text), 0.3);
+    }
+
+    #landmark{
+        margin: 16px;
+    
+    }
+                            /*  Menu / Profile  */
+    #profile{
+        margin: 16px;
+    }
+}

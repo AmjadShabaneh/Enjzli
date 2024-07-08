@@ -1,0 +1,1159 @@
+#Container{
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 100%;
+    color: rgba(var(--clr-text));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Main{
+    width: 800px;
+    height: 800px;
+    padding: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+                    /*  InfoDiv  */
+#InfoDiv{
+    width: 500px;
+    height: 100%;
+    padding: 32px;
+    background-color: rgba(74, 75, 77, 0.2);
+    border: 1px solid;
+    border-radius: 0px 24px 24px 0px;
+    border-image: radial-gradient( rgb(255, 255, 255), rgba(255, 255, 255, 0)) 1;
+    box-shadow: 0px 4px 20px 0px rgb(0, 0, 0, .25);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.color-option {
+    width: 40px;
+    height: 40px;
+    border-radius: 150px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+input[type="file"] {
+    position: absolute;
+    top: -50;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    border: 1px red solid;
+    cursor: pointer;
+    border-radius: 100px;
+  }
+
+.selected{
+    border: 2px solid black;
+}
+
+input[type="radio"]:focus {
+    border: 2px solid black;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#radio1 { background-color: #1d5b79; }
+
+#radio2 { background-color: #468B97; }
+
+#radio3 { background-color: #6277ef; }
+
+#radio4 { background-color: #F3AA60; }
+
+#radio5 { background-color: #EF6262; }
+
+#radio6 { background-color: #e162ef; }
+
+label{
+    font-size: 22px;
+}
+
+#GymPic{
+    width: 120px;
+    height: 120px;
+    background-color: rgba(var(--clr-second));
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    transition: 0.3s;
+}
+
+#Upload{
+    width: 80%;
+    height: 80%;
+}
+
+#Header{
+    font-family: "Avenir Heavy";
+    font-size: 32px;
+}
+
+#Sm{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#Lg{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+input{
+    box-shadow: 0px 4px 10px 0px rgb(0, 0, 0, .1);
+    transition: 0.3s;
+}
+
+input.SmInput{
+    height: 40px;
+    width: 210px;
+    background-color: rgba(var(--clr-second));
+    border: 0px solid;
+    border-radius: 8px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    font-family: "Avenir regular";
+    font-size: 20px;
+    color: rgba(var(--clr-text));
+    padding-right: 8px;
+    box-sizing:border-box;
+}
+
+select.Lginput{
+    height: 40px;
+    width: 436px;
+    background-color: rgba(var(--clr-second));
+    border: 0px solid;
+    border-radius: 8px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    font-family: "Avenir regular";
+    font-size: 20px;
+    color: rgba(var(--clr-text));
+    padding-right: 8px;
+    box-sizing:border-box;
+}
+
+input[type='password'] {
+    font-family: Verdana;
+    letter-spacing: 0.125em;
+}
+
+::placeholder{
+    color: rgba(var(--clr-text));
+    opacity: 0.3;
+    font-family: "Avenir regular";
+    letter-spacing: 0em;
+}
+
+input:focus{
+    outline: none !important;
+    background-color: rgba(var(--clr-main));
+}
+select:focus{
+    outline: none !important;
+}
+
+select{
+    height: 40px;
+    width: 210px;
+    background-color: rgba(var(--clr-second));
+    border: 0px solid;
+    border-radius: 8px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    font-family: "Avenir regular";
+    color: rgba(var(--clr-text));
+    font-size: 20px;
+    padding-right: 8px;
+    box-sizing:border-box;
+    box-shadow: 0px 4px 10px 0px rgb(0, 0, 0, .1);
+    transition: 0.3s;
+}
+
+select:hover{
+    background-color: rgba(var(--clr-second), 0.8);
+    cursor: pointer;
+}
+
+input:hover{
+    background-color: rgba(var(--clr-second), 0.8);
+}
+
+option{
+    font-family: "Avenir regular";
+    color: rgba(var(--clr-text));
+}
+
+input[type='checkbox']{
+    width: 30px;
+    height: 30px;
+    appearance: none;
+    background-color: rgba(var(--clr-text));
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+input[type='checkbox'],#Check{
+    cursor: pointer;
+}
+
+input[type='checkbox']:checked{
+    background-color: rgba(var(--clr-second));
+    background-image: url(../img/Tick6.png);
+    background-size: cover;
+}
+
+.Holder{
+    opacity: 0.5;
+}
+
+button{
+    width:100%;
+    height:64px;
+    font-size:32px;
+    padding-right:16px;
+    color: rgba(var(--clr-text));
+    font-family: 'Avenir Heavy';
+    background-color:rgba(var(--clr-cta));
+    border:0px solid;
+    cursor:pointer;
+    border-radius:8px ;
+    margin-top: 32px;
+    transition: 0.2s;
+
+}
+
+button:hover{
+    background-color: rgba(var(--clr-ctaHover));
+}
+
+#PayCheck{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+label#Check{
+    font-size: 20px;
+}
+
+                    /*  SidePhoto  */
+#SidePhoto{
+    width: 300px;
+    border-radius: 24px 0px 0px 24px;
+    height: 100%;
+    box-shadow: 0px 4px 20px 0px rgb(0, 0, 0, .25);
+    background-image: url(../../img/gym22.jpg);
+    background-size: cover;
+    background-position: -550px;
+    opacity: 0.5;
+    padding: 32px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#Back{
+    width: 52px;
+    height: 52px;
+    background-color: rgb(33, 33, 33, 0.8);
+    border-radius: 100px;
+    box-shadow: 0px 4px 10px 0px rgb(0, 0, 0, .5);
+}
+
+#Pre{
+    height: 52px;
+}
+                    /*  Menu  */
+#menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#landmark{
+    font-family: 'Avenir Black';
+    font-size: 32px;
+}
+                        /*  Menu / Profile  */
+#profile{
+    display: flex;
+    flex-direction: row;
+    line-height: 20px;
+    align-items: center;
+    margin: 32px;
+}
+
+#pic{
+    width: 56px;
+    height: 56px;
+    border-radius: 150px;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url("../../img/Fares.jpg");
+    margin-left: 8px;
+}
+
+#name{
+    color: rgba(var(--clr-text));
+    font-family: 'avenir regular';
+    font-size: 16px;
+}
+
+#logout{
+    color: rgba(var(--clr-text));
+    font-family: 'avenir regular';
+    opacity: 0.4;
+    font-size: 16px;
+}
+
+#logout:hover { 
+    opacity: 0.5; 
+}
+
+                    /*  Links  */
+a{
+    color: rgba(var(--clr-text));
+}
+
+a:link { 
+    text-decoration: none;
+}
+
+a:visited { 
+    text-decoration: none;
+}
+
+a:hover { 
+    text-decoration: none;
+}
+
+a:active { 
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 1536px) {
+    #Container{
+        max-width: 1280px;
+    }
+    
+    #Main{
+        width: 800px;
+        height: 800px;
+        padding: 32px;
+    }
+    
+                        /*  InfoDiv  */
+    #InfoDiv{
+        width: 500px;
+        height: 100%;
+        padding: 32px;
+        gap: 20px;
+    }
+    
+    label{
+        font-size: 22px;
+    }
+    
+    #GymPic{
+        width: 120px;
+        height: 120px;
+    }
+
+    #Header{
+        font-size: 32px;
+    }
+    
+    input.SmInput{
+        height: 40px;
+        width: 210px;
+        margin-top: 8px;
+        margin-bottom: 16px;
+        font-size: 20px;
+        padding-right: 8px;
+    }
+    
+    select.Lginput{
+        height: 40px;
+        width: 436px;
+        margin-top: 8px;
+        margin-bottom: 16px;
+        font-size: 20px;
+        padding-right: 8px;
+    }
+    
+    select{
+        height: 40px;
+        width: 210px;
+        border-radius: 8px;
+        margin-top: 8px;
+        margin-bottom: 16px;
+        font-size: 20px;
+        padding-right: 8px;
+    }
+
+    input[type='checkbox']{
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+    }
+    button{
+        width:100%;
+        height:64px;
+        font-size:32px;
+        padding-right:16px;
+        border-radius:8px ;
+        margin-top: 32px;
+    }
+
+                        /*  SidePhoto  */
+    #SidePhoto{
+        width: 300px;
+        height: 100%;
+        background-size: cover;
+        background-position: -550px;
+        padding: 32px;
+    }
+    
+    #Back{
+        width: 52px;
+        height: 52px;
+    }
+    
+    #Pre{
+        height: 52px;
+    }
+                        /*  Menu  */
+    #menu{
+        width: 100%;
+    }
+    
+    #landmark{
+        font-size: 32px;
+    }
+                            /*  Menu / Profile  */
+    #profile{
+        line-height: 20px;
+        margin: 32px;
+    }
+    
+    #pic{
+        width: 56px;
+        height: 56px;
+        margin-left: 8px;
+    }
+    
+    #name{
+        font-size: 16px;
+    }
+    
+    #logout{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    #Container{
+        max-width: 1024px;
+    }
+    
+    #Main{
+        width: 800px;
+        height: 800px;
+        padding: 24px;
+    }
+    
+                        /*  InfoDiv  */
+    #InfoDiv{
+        width: 450px;
+        height: 100%;
+        padding: 24px;
+        gap: 20px;
+    }
+    
+    label{
+        font-size: 20px;
+    }
+    
+    #GymPic{
+        width: 100px;
+        height: 100px;
+    }
+
+    #Header{
+        font-size: 32px;
+    }
+    
+    input.SmInput{
+        height: 40px;
+        width: 190px;
+        margin-top: 8px;
+        margin-bottom: 16px;
+        font-size: 18px;
+        padding-right: 8px;
+
+    }
+    
+    select.Lginput{
+        height: 40px;
+        width: 401px;
+        margin-top: 8px;
+        margin-bottom: 16px;
+        font-size: 18px;
+        padding-right: 8px;
+
+    }
+    
+    select{
+        height: 40px;
+        width: 190px;
+        border-radius: 8px;
+        margin-top: 8px;
+        margin-bottom: 16px;
+        font-size: 20px;
+        padding-right: 8px;
+    }
+
+    input[type='checkbox']{
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+    }
+
+    button{
+        width:100%;
+        height:64px;
+        font-size:32px;
+        padding-right:16px;
+        border-radius:8px ;
+        margin-top: 32px;
+    }
+
+    label#Check{
+        font-size: 16px;
+    }
+    
+
+                        /*  SidePhoto  */
+    #SidePhoto{
+        width: 250px;
+        height: 100%;
+        background-size: cover;
+        background-position: -600px;
+        padding: 32px;
+    }
+    
+    #Back{
+        width: 52px;
+        height: 52px;
+    }
+    
+    #Pre{
+        height: 52px;
+    }
+                        /*  Menu  */
+    #menu{
+        width: 100%;
+    }
+    
+    #landmark{
+        font-size: 32px;
+    }
+                            /*  Menu / Profile  */
+    #profile{
+        line-height: 20px;
+        margin: 32px;
+    }
+    
+    #pic{
+        width: 56px;
+        height: 56px;
+        margin-left: 8px;
+    }
+    
+    #name{
+        font-size: 16px;
+    }
+    
+    #logout{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1024px) { 
+    #Container{
+        max-width: 768px;
+    }
+    
+    #Main{
+        width: 800px;
+        height: 800px;
+        padding: 24px;
+    }
+    
+                        /*  InfoDiv  */
+    #InfoDiv{
+        width: 450px;
+        height: 100%;
+        padding: 24px;
+        gap: 20px;
+    }
+    
+    label{
+        font-size: 20px;
+    }
+    
+    #GymPic{
+        width: 100px;
+        height: 100px;
+    }
+
+    #Header{
+        font-size: 32px;
+    }
+    
+    input.SmInput{
+        height: 40px;
+        width: 190px;
+        margin-top: 8px;
+        margin-bottom: 16px;
+        font-size: 18px;
+        padding-right: 8px;
+
+    }
+    
+    select.Lginput{
+        height: 40px;
+        width: 401px;
+        margin-top: 8px;
+        margin-bottom: 16px;
+        font-size: 18px;
+        padding-right: 8px;
+
+    }
+    
+    select{
+        height: 40px;
+        width: 190px;
+        border-radius: 8px;
+        margin-top: 8px;
+        margin-bottom: 16px;
+        font-size: 20px;
+        padding-right: 8px;
+    }
+
+    input[type='checkbox']{
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+    }
+
+    button{
+        width:100%;
+        height:64px;
+        font-size:32px;
+        padding-right:16px;
+        border-radius:8px ;
+        margin-top: 32px;
+    }
+
+    label#Check{
+        font-size: 16px;
+    }
+    
+
+                        /*  SidePhoto  */
+    #SidePhoto{
+        width: 250px;
+        height: 100%;
+        background-size: cover;
+        background-position: -600px;
+        padding: 32px;
+    }
+    
+    #Back{
+        width: 52px;
+        height: 52px;
+    }
+    
+    #Pre{
+        height: 52px;
+    }
+                        /*  Menu  */
+    #menu{
+        width: 100%;
+    }
+    
+    #landmark{
+        font-size: 32px;
+    }
+                            /*  Menu / Profile  */
+    #profile{
+        line-height: 20px;
+        margin: 32px;
+    }
+    
+    #pic{
+        width: 56px;
+        height: 56px;
+        margin-left: 8px;
+    }
+    
+    #name{
+        font-size: 16px;
+    }
+    
+    #logout{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    #Container{
+        max-width: 640px;
+        height: 100%;
+    }
+    
+    #Main{
+        width: 600px;
+        height: auto;
+        padding: 24px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    
+                        /*  InfoDiv  */
+    #InfoDiv{
+        width: 600px;
+        height: 500;
+        padding: 24px;
+        gap: 20px;
+        border-radius: 0px 0px 24px 24px;
+        align-items: center;
+    }
+    
+    label{
+        font-size: 20px;
+    }
+    
+    #GymPic{
+        width: 100px;
+        height: 100px;
+    }
+
+    #Header{
+        font-size: 32px;
+    }
+    
+    input.SmInput{
+        height: 40px;
+        width: 550px;
+        margin-top: 8px;
+        margin-bottom: 16px;
+        font-size: 18px;
+        padding-right: 8px;
+
+    }
+    
+    select.Lginput{
+        height: 40px;
+        width: 550px;
+        margin-top: 8px;
+        margin-bottom: 16px;
+        font-size: 18px;
+        padding-right: 8px;
+    }
+    
+    
+    select{
+        height: 40px;
+        width: 550px;
+        border-radius: 8px;
+        margin-top: 8px;
+        margin-bottom: 16px;
+        font-size: 20px;
+        padding-right: 8px;
+    }
+
+    input[type='checkbox']{
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+    }
+
+    button{
+        width:100%;
+        height:64px;
+        font-size:32px;
+        padding-right:16px;
+        border-radius:8px ;
+        margin-top: 32px;
+    }
+
+    label#Check{
+        font-size: 16px;
+    }
+    
+
+                        /*  SidePhoto  */
+    #SidePhoto{
+        width: 600px;
+        height: 100px;
+        border-radius: 24px 24px 0px 0px;
+        background-size: cover;
+        background-position: -600px;
+        padding: 32px;
+    }
+    
+    #Back{
+        width: 52px;
+        height: 52px;
+    }
+    
+    #Pre{
+        height: 52px;
+    }
+                        /*  Menu  */
+    #menu{
+        width: 100%;
+    }
+    
+    #landmark{
+        font-size: 32px;
+    }
+                            /*  Menu / Profile  */
+    #profile{
+        line-height: 20px;
+        margin: 32px;
+    }
+    
+    #pic{
+        width: 56px;
+        height: 56px;
+        margin-left: 8px;
+    }
+    
+    #name{
+        font-size: 16px;
+    }
+    
+    #logout{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 640px) { 
+    #Container{
+        max-width: 475px;
+        height: 100%;
+    }
+    
+    #Main{
+        width: 400px;
+        height: auto;
+        padding: 24px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    
+                        /*  InfoDiv  */
+    #InfoDiv{
+        width: 400px;
+        height: 500;
+        padding: 24px;
+        gap: 20px;
+        border-radius: 0px 0px 24px 24px;
+        align-items: center;
+    }
+    
+    label{
+        font-size: 20px;
+    }
+    
+    #GymPic{
+        width: 100px;
+        height: 100px;
+    }
+
+    #Header{
+        font-size: 32px;
+    }
+    
+    input.SmInput{
+        height: 40px;
+        width: 350px;
+        margin-top: 8px;
+        margin-bottom: 16px;
+        font-size: 18px;
+        padding-right: 8px;
+
+    }
+    
+    select.Lginput{
+        height: 40px;
+        width: 350px;
+        margin-top: 8px;
+        margin-bottom: 16px;
+        font-size: 18px;
+        padding-right: 8px;
+    }
+    
+    
+    select{
+        height: 40px;
+        width: 350px;
+        border-radius: 8px;
+        margin-top: 8px;
+        margin-bottom: 16px;
+        font-size: 20px;
+        padding-right: 8px;
+    }
+
+    input[type='checkbox']{
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+    }
+
+    button{
+        width:100%;
+        height:64px;
+        font-size:32px;
+        padding-right:16px;
+        border-radius:8px ;
+        margin-top: 32px;
+    }
+
+    label#Check{
+        font-size: 16px;
+    }
+    
+
+                        /*  SidePhoto  */
+    #SidePhoto{
+        width: 400px;
+        height: 100px;
+        border-radius: 24px 24px 0px 0px;
+        background-size: cover;
+        background-position: -600px;
+        padding: 32px;
+    }
+    
+    #Back{
+        width: 48px;
+        height: 48px;
+    }
+    
+    #Pre{
+        height: 48px;
+    }
+
+    #Arrow{
+        width: 48px;
+        height: 48px;
+    }
+                        /*  Menu  */
+    #menu{
+        width: 100%;
+    }
+    
+    #landmark{
+        font-size: 32px;
+    }
+                            /*  Menu / Profile  */
+    #profile{
+        line-height: 20px;
+        margin-top: 16px;
+        margin-right: 0px;
+    }
+    
+    #pic{
+        width: 56px;
+        height: 56px;
+        margin-left: 8px;
+    }
+    
+    #name{
+        font-size: 16px;
+    }
+    
+    #logout{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 475px) { 
+    #Container{
+        max-width: 100%;
+        height: 100%;
+    }
+    
+    #Main{
+        width: 300px;
+        height: auto;
+        padding: 24px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    
+                        /*  InfoDiv  */
+    #InfoDiv{
+        width: 300px;
+        height: 500;
+        padding: 24px;
+        gap: 20px;
+        border-radius: 0px 0px 16px 16px;
+        align-items: center;
+    }
+    
+    label{
+        font-size: 20px;
+    }
+    
+    #GymPic{
+        width: 100px;
+        height: 100px;
+    }
+
+    #Header{
+        font-size: 32px;
+    }
+    
+    input.SmInput{
+        height: 40px;
+        width: 250px;
+        margin-top: 8px;
+        margin-bottom: 16px;
+        font-size: 16px;
+        padding-right: 8px;
+
+    }
+    
+    select.Lginput{
+        height: 40px;
+        width: 250px;
+        margin-top: 8px;
+        margin-bottom: 16px;
+        font-size: 16px;
+        padding-right: 8px;
+    }
+    
+    
+    select{
+        height: 40px;
+        width: 250px;
+        border-radius: 8px;
+        margin-top: 8px;
+        margin-bottom: 16px;
+        font-size: 16px;
+        padding-right: 8px;
+    }
+
+    input[type='checkbox']{
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+    }
+
+    button{
+        width:100%;
+        height:64px;
+        font-size:24px;
+        padding-right:16px;
+        border-radius:8px ;
+        margin-top: 32px;
+    }
+
+    label#Check{
+        font-size: 16px;
+    }
+    
+
+                        /*  SidePhoto  */
+    #SidePhoto{
+        width: 300px;
+        height: 100px;
+        border-radius: 16px 16px 0px 0px;
+        background-size: cover;
+        background-position: -600px;
+        padding: 32px;
+    }
+    
+    #Back{
+        width: 48px;
+        height: 48px;
+    }
+    
+    #Pre{
+        height: 48px;
+    }
+
+    #Arrow{
+        width: 48px;
+        height: 48px;
+    }
+                        /*  Menu  */
+    #menu{
+        width: 100%;
+    }
+    
+    #landmark{
+        font-size: 32px;
+    }
+                            /*  Menu / Profile  */
+    #profile{
+        line-height: 20px;
+        margin-top: 16px;
+        margin-right: 0px;
+    }
+    
+    #pic{
+        width: 56px;
+        height: 56px;
+        margin-left: 8px;
+    }
+    
+    #name{
+        font-size: 16px;
+    }
+    
+    #logout{
+        font-size: 16px;
+    }
+}

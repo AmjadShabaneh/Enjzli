@@ -1,0 +1,221 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(var(--clr-main));
+    font-family: "avenir regular";
+    color: rgba(var(--clr-text));
+}
+
+::selection {
+    color: rgba(var(--clr-main));
+    background-color: rgba(var(--clr-ctaHover));
+}
+
+
+.container{
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    padding-left: 32px;
+    padding-right: 32px;
+    box-sizing: border-box;
+}
+
+.contant{
+    width: 100%;
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.goback{
+    width: fit-content;
+    height: auto;
+    font-size: 16px;
+    padding-right: 16px;
+    padding-left: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 8px;
+    color: rgba(var(--clr-text));
+    font-family: "avenir heavy";
+    background-color: rgba(38, 39, 40, 0);
+    border: 0px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opc{
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.goback:hover{
+    background-color: rgb(38, 39, 40, 1);
+}
+
+.goback:hover .opc{
+    opacity: 1;
+}
+
+.arrow{
+    width: 32px;
+    height: 32px;
+}
+
+.goback:hover .arrow{
+    opacity: 1;
+}
+
+.header-title{
+    font-size: 56px;
+    font-family: "avenir black";
+}
+
+
+
+                    /* Team */
+.team{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 10%;
+    row-gap: 64px;
+}
+
+.member{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+div.photo{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgba(var(--clr-text));
+    background-size: cover;
+    border: 1px solid gray;
+}
+
+div.Azoz{
+    background-image: url('../../img/members/AzozAmleh.jpg');
+}
+
+div.Azoz:hover{
+    background-image: url('../../img/members/AzozAmleh2.jpg');
+
+}
+
+div.Mohammed{
+    background-image: url('../../img/members/mohammad2.PNG');
+    background-size: 250px;
+    background-position: -10px 0px;
+}
+
+div.Mohammed:hover{
+    background-image: url('../../img/members/mohammad1.PNG');
+    background-size: 350px;
+    background-position: -20px -50px;
+}
+
+div.Mohammed:hover, div.Azoz:hover, div.Aiman:hover, div.ameen:hover {
+    filter:drop-shadow(10);
+}
+
+div.Aiman{
+    background-image: url('../../img/members/Aiman.jpeg');
+    background-size: 350px;
+    background-position: -70px -210px;
+}
+
+div.Aiman:hover{
+    background-image: url('../../img/members/Aiman.jpg');
+    background-size: 300px;
+    background-position: -80px -0px;
+}
+
+div.Ameen{
+    background-image: url('../../img/members/al-ameen_1.jpg');
+    background-size: 250px;
+    background-position: -10px -20px;
+}
+
+div.Ameen:hover{
+    background-image: url('../../img/members/al-ameen_2.jpg');
+    background-size: 450px;
+    background-position: -120px -160px;
+}
+
+div.member-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name{
+    font-size: 24px;
+    font-family: "avenir heavy";
+}
+
+.major{
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.x{
+    width:28px;
+    height:28px;
+    filter:contrast(0.3);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.x:hover{
+    filter:contrast(1);
+}
+
+.linkedin{
+    width: 32px;
+    height: 32px;
+    filter: saturate(0);
+    cursor: pointer;
+
+}
+
+.linkedin:hover{
+    filter: saturate(1);
+    transition: all 0.2s;
+}

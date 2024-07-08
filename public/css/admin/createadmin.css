@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: rgba(var(--clr-text));
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contant{
+    width: 100%;
+    height: fit-content;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 32px 40px 32px;
+    background-color: rgba(var(--clr-second), 0.5);
+    border-radius: 24px;
+    box-shadow: 0px 4px 30px 0px rgb(0, 0, 0, .15);
+    gap: 32px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header{
+    font-family: "avenir black";
+    font-size: 32px;
+}
+
+label{
+    font-family: "avenir regular";
+    font-size: 20px;
+    margin-top: 18px;
+}
+
+input{
+    background-color: rgba(var(--clr-second));
+    border: 1px solid rgba(var(--clr-main));
+    border-radius: 8px;
+    padding: 8px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: fit-content;
+    font-size: 18px;
+    color: rgba(var(--clr-text));
+    margin-top: 6px;
+}
+
+input:focus{
+    outline: none !important;
+    background-color: rgba(var(--clr-main));
+    border: 1px solid rgba(var(--clr-second));
+}
+
+.btn{
+    width:100%;
+    height:56px;
+    font-size:24px;
+    padding-right:16px;
+    color: rgba(var(--clr-text));
+    font-family: 'Avenir Heavy';
+    background-color:rgba(var(--clr-cta));
+    border:0px solid;
+    cursor:pointer;
+    border-radius: 10px;
+    margin-top: 32px;
+    transition: all 0.3s ease;
+}
+.btn:hover{
+    background-color: rgba(var(--clr-ctaHover));
+}
+
+.profile-pic{
+    width: 150px;
+    height: 150px;
+    background-color: rgba(var(--clr-text));
+    border-radius: 150px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic:hover{
+    background-color: rgba(var(--clr-text), 0.5);
+}
+
+#img-input{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 150px;
+    margin: 0px;
+    cursor:pointer;
+}
+
+img{
+    width: 120px;
+    height: 120px;
+    opacity: 0.5;
+    position: absolute;
+}
+
+@media screen and (max-width:500px) {
+    .contant{
+        padding: 24px 16px 24px 16px;
+    }
+}

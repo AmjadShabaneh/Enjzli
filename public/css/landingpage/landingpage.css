@@ -1,0 +1,2266 @@
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(var(--clr-main));
+
+    /*background: rgb(29,29,31);
+    background: linear-gradient(to bottom, rgba(29,29,31,1) 29%, rgba(50,51,53,1) 70%);*/
+    font-family: "avenir regular";
+    color: rgba(var(--clr-text));
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    padding-left: 32px;
+    padding-right: 32px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+.contant{
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: 64px;
+
+}
+
+.background{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    background-color: #242526;
+    z-index: -10;
+}
+
+
+.prico{
+    height: 800px;
+}
+
+                    /* Menu */
+div.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+}
+
+div.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+div.profilepic{
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: rgba(var(--clr-text));
+    background-image: url('../../img/person-1.svg');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transition: all 0.2s ease;
+}
+
+span.login{
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+
+div.menu-info{
+    font-size: 16px;
+    display: flex;
+    gap: 32px;
+}
+
+
+span.logo-img{
+    font-size: 32px;
+    font-family: "avenir black";
+}
+
+
+
+                    /* Header */
+div.header{
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+    margin-top: 32px;
+}
+
+.badge{
+    height: 80px;
+}
+
+.badge img{
+    height:100%;
+    width:auto;
+}
+
+.header-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.header-info{
+    display: block;
+    min-width: 620px;
+    max-width: 620px;
+}
+
+span.header-title-info{
+    font-size: 60px;
+    font-family: "avenir heavy";
+
+}
+
+span.title-box{
+    width:fit-content;
+    color:#483E3E;
+    display: inline-flex;
+    justify-content:center;
+    align-items:center;
+    white-space: nowrap;
+    margin-right: 16px;
+}
+
+div.box{
+    width: 270px;
+    height:100px;
+    background-color:#DED8D8;
+    position:absolute;
+    z-index:-1;
+    rotate:-2deg;
+}
+
+span.header-subtitle-info{
+    font-size: 24px;
+    opacity: 0.5;
+    display: block;
+    margin-top: 16px;
+    font-family: "avenir heavy";
+}
+
+.header-desc{
+    margin-top: 64px;
+}
+
+span.desc{
+    font-size: 14px;
+    margin-right: 4px;
+    font-family: 'avenir heavy'
+}
+
+.btn{
+    width: 288px;
+    height:56px;
+    font-size:14px;
+    padding-right:16px;
+    border-radius: 8px;
+    color: rgba(var(--clr-text));
+    font-family: 'Avenir Heavy';
+    background-color:rgba(var(--clr-cta));
+    border:0px solid;
+    cursor:pointer;
+    box-shadow: 0px 4px 10px 0px rgb(0, 0, 0, .2);
+    transition: all 0.2s ease;
+
+}
+
+.btn:hover{
+    background-color: rgba(var(--clr-ctaHover));
+}
+
+.users{
+    display: flex;
+}
+
+.user{
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    border: 4px solid rgba(var(--clr-main));
+    margin-right: -24px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#user1{
+    margin-right:0px;
+    background-image:url('../../img/Users/women.jpg');
+    background-position: 0px -10px;
+}
+
+#user2{
+    background-image:url('../../img/Users/man.jpg');
+    background-position: -7px 0px;
+}
+
+#user3{
+    background-image:url('../../img/Users/man_3.jpg');
+}
+
+#user4{
+    background-image:url('../../img/Users/women_2.jpg');
+    background-position: 0px -5px;
+
+}
+
+#user5{
+    background-image:url('../../img/Users/man_2.jpg');
+}
+
+.review{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    margin-top: 48px;
+}
+
+.stars{
+    display:flex;
+}
+
+.fa-star, .fa{
+    width: 20px;
+    height: 20px;
+    font-size: large;
+    size: 200px;
+}
+
+.checked {
+    color: rgb(255, 196, 0);
+}
+
+
+
+                    /* Sponser */
+.sponser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsers-imgs{
+    display: flex;
+    align-items:start;
+    justify-content: center;
+    gap: 24px;
+    margin-right: 32px;
+}
+
+.sponser-img{
+    width: auto;
+    filter:saturate(0);
+    transition: all 0.3s ease;
+
+}
+
+.sponser-info{
+    font-size: 12px;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.x{
+    height:40px;
+    opacity: 0.7;
+    filter:contrast(.3);
+}
+
+.facebook{
+    height:28px
+}
+
+.instagram{
+    height:36px
+}
+
+.facebook:hover,.instagram:hover{
+    filter:saturate(1);
+    cursor: pointer;
+
+}
+
+.x:hover{
+    filter:contrast(1);
+    opacity: 1;
+    cursor: pointer;
+
+}
+
+hr.site-line{
+    border: 1px solid rgba(var(--clr-text));
+    opacity: 0.04;
+    width: 100%;
+    position: absolute;
+    left:0%;
+}
+
+a{
+    color: rgba(var(--clr-text), 0.7);
+    transition: all 0.2s ease;
+}
+
+a:link { 
+    text-decoration: none;
+}
+
+a:visited { 
+    text-decoration: none;
+}
+
+a:hover{ 
+    text-decoration: none;
+    color: rgba(var(--clr-text), 1);
+}
+
+a.profile-link:hover .profile .profilepic { 
+    background-color: rgba(var(--clr-text), 1);
+}
+
+a.profile-link:hover .profile .login { 
+    color: rgba(var(--clr-text), 1);
+}
+
+a:active { 
+    text-decoration: none;
+}
+
+
+
+                    /* About */
+.about{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-header-main{
+    font-family: "avenir black";
+    font-size: 48px;
+}
+
+.about-header-submain{
+    font-size: 18px;
+    opacity: 0.5;
+}
+
+.about-block{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    margin-top: 96px;
+    gap: 24px;
+}
+
+.about-block-img{
+    width: 436px;
+    height: 436px;
+    min-width: 436px;
+    max-width: 436px;
+    border-radius: 16px;
+    box-shadow: 4px 4px 10px 0px rgba(var(--clr-shadow));
+}
+
+.img1{
+    background-image: url("../../img/Login.jpg");
+    background-size: cover;
+    background-position:center;
+    overflow: hidden;
+
+}
+
+.img2{
+    background-image: url("../../img/Dashboard.jpg");
+    background-size: cover;
+    background-position:center;
+}
+
+.img3{
+    background-image: url("../../img/Coustmers.jpg");
+    background-size: cover;
+    background-position:center;
+}
+
+.about-block-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-block-info-badge{
+    color: rgba(var(--clr-cta));
+    font-size: 18px;
+    font-family: "avenir heavy";
+}
+
+.about-block-info-main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+}
+
+.block-main1{
+    font-size: 48px;
+    font-family: "avenir black";
+}
+
+.block-main2{
+    font-size: 18px;
+    opacity: 0.5;
+}
+
+.about-block-info-CTA{
+    margin-top: 64px;
+}
+
+
+
+                    /* Apps */
+.apps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apps-main{
+    width: 536px;
+    height: 220px;
+    border-radius: 16px;
+    background-color: rgba(var(--clr-second));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.apps-header{
+    font-size: 36px;
+    font-family: "avenir black";
+}
+
+.apps-imgs{
+    display: flex;
+    column-gap: 16px;
+}
+
+
+
+                    /* Pricing */
+.price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "avenir black";
+}
+
+.price-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-main{
+    font-size: 48px;
+    font-family: "avenir black";
+}
+
+.price-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+}
+
+.price-card{
+    width: 32.5%;
+    max-width: 500px;
+    height: auto;
+    background-color: rgba(var(--clr-second));
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 32px;
+}
+
+.card2{
+    border: 4px solid rgba(var(--clr-cta));
+}
+
+.price-price{
+    margin-top: 0px;
+}
+
+.price1{
+    font-size: 16px;
+    opacity: 0.5;
+}
+
+.price2{
+    font-size: 48px;
+}
+
+.price3{
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.price-feature{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    row-gap: 12px;
+}
+
+.feature{
+    display: flex;
+}
+
+.feature-img{
+    width: 24px;
+    height: 24px;
+}
+
+.feature-desc{
+    margin-right: 8px;
+}
+
+.price-btn{
+    width: 100%;
+    margin-top: 48px;
+}
+
+.price-btn-btn{
+    width: 100%;
+}
+
+.top-badge{
+    width: 100px;
+    height: auto;
+    padding: 8px;
+    border-radius: 100px;
+    background-color: rgba(var(--clr-cta));
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -48px;
+}
+
+.top-badge-parent{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+                    /* FAQ */
+.FAQ{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.FAQ-main{
+    font-size: 40px;
+    font-family: "avenir black";
+}
+
+.FAQ-container{
+    margin-top: 32px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.faq-question {
+    padding: 10px 0;
+    border-bottom: 1px solid white;
+}
+
+.panel-title {
+    font-size: 24px;
+    width: 95%;
+    position: relative;
+    margin: 0px 30px;
+    padding: 10px 10px 0px 48px;
+    display: block;
+    cursor: pointer;
+    color: rgba(var(--clr-text), 1);
+    transition: all 0.2s ease;
+
+}
+
+.panel-content {
+    font-size: 20px;
+    padding: 0px 14px;
+    margin: 0 40px;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    position: relative;
+    opacity: 0;
+    -webkit-transition: .4s ease;
+    -moz-transition: .4s ease;
+    -o-transition: .4s ease;
+    transition: .4s ease;
+    color: rgba(var(--clr-text), 1);
+}
+
+.panel:checked ~ .panel-content{
+    height: auto;
+    opacity: 1;
+    padding: 14px;
+}
+
+.panel:checked ~ .panel-title{
+    color: rgba(var(--clr-text), 0.5);
+}
+
+.plus {
+    position: absolute;
+    margin-left:20px;
+    margin-top: 4px;
+    z-index: 5;
+    font-size: 42px;
+    line-height: 100%;
+    -webkit-user-select: none;    
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-transition: .2s ease;
+    -moz-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
+}
+
+.panel:checked ~ .plus {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.panel {
+    display: none;
+}
+
+.FAQ-open{
+    width: 40px;
+    height: 40px;
+    transition: all 0.5 ease;
+}
+
+.FAQ-desc{
+    font-size: 20px;
+    margin-right: 8px;
+    color: rgba(var(--clr-cta), 0.1);
+}
+
+.FAQ-btn{
+    cursor: pointer;
+    border:none;
+    outline: none;
+    background-color: transparent;
+}
+
+.FAQ-hiden{
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.5 ease;
+    max-height: 0;
+}
+
+#Question{
+    transition: all 0.3s ease;
+}
+
+.FAQ-hiden.show{
+    max-height: 200px; 
+    opacity: 1;
+    padding:0px 15px 30px 15px;
+}
+
+.FAQ-img.open{
+    transform: rotate(180deg);
+}
+
+
+                    /* Buy CTA */
+.buyCTA{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CTA-main{
+    width:100%;
+    height: 200px;
+    border-radius: 16px;
+    background-color: rgba(var(--clr-cta));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 24px;
+}
+
+.CTA-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.CTA-header{
+    font-size: 24px;
+    font-family: "avenir black";
+}
+
+.CTA-subheader{
+    font-size: 14px;
+    opacity: 0.5;
+    font-family: "avenir heavy";
+}
+
+.CTA-btn-btn{
+    background-image: linear-gradient(to right, rgba(var(--clr-cta)), rgba(var(--clr-ctaHover)));
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.CTA-btn-btn:hover{
+    filter: brightness(0.95);
+}
+
+                    /* Footer */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 80%;
+
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+}
+
+.link-header{
+    font-size: 18px;
+    opacity: 0.5;
+}
+
+.link-cop{
+    font-size: 14px;
+}
+
+.link-desc{
+    font-size: 14px;
+}
+
+.linko{
+    display: flex;
+    gap: 16px;
+}
+
+.link-social{
+    width: 32px;
+    height: 32px;
+}
+
+.bg-footer{
+    height: 25%;
+}
+
+
+#overlay{
+    background-color: black;
+    opacity: 0.5;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 6;
+}
+
+#contactus-div{
+    max-width: 500px;
+    height: fit-content;
+    background-color: rgba(var(--clr-second));
+    border-radius: 16px;
+    width: 70%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 7;
+    padding: 24px;
+    text-align: center;
+    display: none;
+
+}
+
+#contactus-header{
+    font-size: 24px;
+    font-family: "avenir black";
+}
+
+#whatsapp-button{
+    background-color: #25D366;
+    border-radius: 16px;
+    width: 100%;
+    height: 64px;
+    padding: 8px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+#whatsapp-link{
+    width: 100%;
+    color: rgba(var(--clr-text),1);
+}
+
+#whatsapp-text{
+    font-size: 20px;
+    font-family: "avenir black";
+}
+
+#burgar-menu{
+    width: 100%;
+    height: 300px;
+    position: fixed;
+    top: -300px;
+    right: 0;
+    background-color: rgba(var(--clr-second));
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    transition: all 0.5s ease;
+}
+
+.burgar-links{
+    font-size: 24px;
+    font-family: "avenir black";
+}
+
+#Burger-icon{
+    display: none;
+}
+
+.faq-background{
+    height: 1900px;
+}
+
+@media screen and (max-width: 1024px) {
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+        font-family: "avenir regular";
+    }
+    
+    .container{
+        width: 100%;
+        height: 100%;
+        max-width: 1300px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    
+    .contant{
+        width: 100%;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        margin-top: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    
+    .background{
+        width: 100%;
+        height: 600px;
+        position: absolute;
+        background-color: #242526;
+        z-index: -10;
+    }
+    
+    
+    .prico{
+        height: 1890px;
+    }
+    
+                        /* Menu */
+    div.menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0px;
+    }
+    
+    div.profile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    div.profilepic{
+        width: 48px;
+        height: 48px;
+        border-radius: 100%;
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        transition: all 0.2s ease;
+    
+        
+    }
+    
+    span.login{
+        font-size: 16px;
+        transition: all 0.2s ease;
+    }
+    
+    
+    div.menu-info{
+        font-size: 16px;
+        display: flex;
+        gap: 0px;
+    }
+    
+    
+    span.logo-img{
+        font-size: 32px;
+        font-family: "avenir black";
+    }
+
+    .hide-menu{
+        display: none;
+    }
+    
+    
+    
+                        /* Header */
+    div.header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+    }
+    
+    .badge{
+        height: 80px;
+    }
+    
+    .badge img{
+        height:100%;
+        width:auto;
+    }
+    
+    div.header-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 620px;
+        max-width: 620px;
+    }
+    
+    div.header-title{
+        margin-top: 0px;
+        text-align: center;
+    }
+    
+    span.header-title-info{
+        font-size: 32px;
+        font-family: "avenir heavy";
+    }
+    
+    span.title-box{
+        width:fit-content;
+        display: inline-flex;
+        justify-content:center;
+        align-items:center;
+        white-space: nowrap;
+        margin-right: 8px;
+    }
+    
+    div.box{
+        width: 140px;
+        height:50px;
+        position:absolute;
+        z-index:-1;
+        rotate:-2deg;
+    }
+    
+    span.header-subtitle-info{
+        font-size: 18px;
+        opacity: 0.5;
+        margin-top: 16px;
+        font-family: "avenir heavy";
+    }
+    
+    .header-desc{
+        margin-top: 48px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        row-gap: 8px;
+    }
+    
+    span.desc{
+        font-size: 14px;
+        font-family: 'avenir heavy'
+    }
+    
+    .btn{
+        width: 288px;
+        height:56px;
+        font-size:14px;
+        padding-right:16px;
+        border-radius: 8px;
+        border:0px solid;
+        cursor:pointer;
+        transition: all 0.2s ease;
+    
+    }
+
+    .user{
+        width: 48px;
+        height: 48px;
+        border-radius: 100%;
+        margin-right: -24px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .review{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-top: 40px;
+    }
+    
+    .stars{
+        display:flex;
+    }
+    
+    .fa-star, .fa{
+        width: 20px;
+        height: 20px;
+        font-size: large;
+    }
+                        /* Sponser */
+    .sponser{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sponsers-imgs{
+        display: flex;
+        align-items:start;
+        justify-content: center;
+        gap: 24px;
+        margin-right: 32px;
+    }
+    
+    .sponser-img{
+        width: auto;
+        filter:saturate(0);
+        transition: all 0.3s ease;
+    
+    }
+    
+    .sponser-info{
+        font-size: 12px;
+        opacity: 0.5;
+        transition: all 0.3s ease;
+    }
+    
+    .x{
+        height:40px;
+        opacity: 0.7;
+        filter:contrast(.3);
+    }
+    
+    .facebook{
+        height:28px
+    }
+    
+    .instagram{
+        height:36px
+    }
+    
+    .facebook:hover,.instagram:hover{
+        filter:saturate(1);
+        cursor: pointer;
+    
+    }
+    
+    .x:hover{
+        filter:contrast(1);
+        opacity: 1;
+        cursor: pointer;
+    
+    }
+    
+    hr.site-line{
+        opacity: 0.04;
+        width: 100%;
+        position: absolute;
+        left:0%;
+    }
+    
+    a{
+        transition: all 0.2s ease;
+    }
+    
+    a:link { 
+        text-decoration: none;
+    }
+    
+    a:visited { 
+        text-decoration: none;
+    }
+    
+    a.menu-link:hover { 
+        text-decoration: none;
+    }
+    
+    a:active { 
+        text-decoration: none;
+    }
+    
+    
+    
+                        /* About */
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .about-header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about-header-main{
+        font-family: "avenir black";
+        font-size: 32px;
+    }
+    
+    .about-header-submain{
+        font-size: 16px;
+        opacity: 0.5;
+    }
+    
+    .about-block{
+        width: 100%;
+        display: flex;
+        align-items: start;
+        margin-top: 80px;
+        gap: 24px;
+    }
+    
+    .about-block-img{
+        width: auto;
+        height: 300px;
+        min-width: 300px;
+        max-width: 300px;
+        border-radius: 16px;
+    }
+    
+    .img1{
+        background-size: cover;
+        background-position:center;
+        overflow: hidden;
+    
+    }
+    
+    .img2{
+        background-size: cover;
+        background-position:center;
+    }
+    
+    .img3{
+        background-size: cover;
+        background-position:center;
+    }
+    
+    .about-block-info{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .about-block-info-badge{
+        font-size: 18px;
+        font-family: "avenir heavy";
+    }
+    
+    .about-block-info-main{
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+    }
+    
+    .block-main1{
+        font-size: 24px;
+        font-family: "avenir black";
+    }
+    
+    .block-main2{
+        font-size: 16px;
+        opacity: 0.5;
+    }
+    
+    .about-block-info-CTA{
+        margin-top: 40px;
+    }
+    
+    
+                        /* Apps */
+    .apps{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .apps-main{
+        width: 436px;
+        height: 150px;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+    
+    .apps-header{
+        font-size: 24px;
+        font-family: "avenir black";
+    }
+    
+    .apps-imgs{
+        display: flex;
+        column-gap: 16px;
+    }
+    
+    .apple, .googleplay{
+        width: 160px;
+    }
+    
+                        /* Pricing */
+    .price{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "avenir black";
+    }
+    
+    .price-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .header-main{
+        font-size: 32px;
+        font-family: "avenir black";
+    }
+    
+    .price-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+    
+    .price-card{
+        width: 100%;
+        max-width:none;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-top: 32px;
+    }
+    
+    .price-price{
+        margin-top: 0px;
+    }
+    
+    .price1{
+        font-size: 16px;
+        opacity: 0.5;
+    }
+    
+    .price2{
+        font-size: 48px;
+    }
+    
+    .price3{
+        font-size: 12px;
+        opacity: 0.5;
+    }
+    
+    .price-feature{
+        display: flex;
+        flex-direction: column;
+        margin-top: 8px;
+        row-gap: 12px;
+    }
+    
+    .feature{
+        display: flex;
+    }
+    
+    .feature-img{
+        width: 24px;
+        height: 24px;
+    }
+    
+    .feature-desc{
+        margin-right: 8px;
+    }
+    
+    .price-btn{
+        width: 100%;
+        margin-top: 48px;
+    }
+    
+    .price-btn-btn{
+        width: 100%;
+    }
+    
+    .top-badge{
+        width: 100px;
+        height: auto;
+        padding: 8px;
+        border-radius: 100px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -48px;
+    }
+    
+    .top-badge-parent{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+                        /* FAQ */
+    
+    
+    
+                        /* Buy CTA */
+    .buyCTA{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .CTA-main{
+        width:100%;
+        height: 200px;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 24px;
+    }
+    
+    .CTA-desc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .CTA-header{
+        font-size: 24px;
+        font-family: "avenir black";
+    }
+    
+    .CTA-subheader{
+        font-size: 14px;
+        opacity: 0.5;
+        font-family: "avenir heavy";
+    }
+    
+    .CTA-btn-btn{
+        opacity: 1;
+        transition: all 0.3s ease;
+    }
+    
+    .CTA-btn-btn:hover{
+        filter: brightness(0.95);
+    }
+    
+                        /* Footer */
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 48px;
+    }
+    
+    .footer-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        width: 80%;
+        gap: 24px;
+        flex-wrap: wrap;
+    }
+    
+    .links{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 16px;
+    }
+    
+    .link-header{
+        font-size: 18px;
+        opacity: 0.5;
+    }
+    
+    .link-cop{
+        font-size: 14px;
+    }
+    
+    .link-desc{
+        font-size: 14px;
+    }
+    
+    .linko{
+        display: flex;
+        gap: 16px;
+    }
+
+    .link-social{
+        width: 32px;
+        height: 32px;
+    }
+
+    .bg-footer{
+        height: 40%;
+    }
+
+    #Burger-icon{
+        display: block;
+    }
+
+    .faq-background{
+        height: 1900px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+        font-family: "avenir regular";
+    }
+    
+    .container{
+        width: 100%;
+        height: 100%;
+        padding-left: 32px;
+        padding-right: 32px;
+        box-sizing: border-box;
+    }
+    
+    .contant{
+        width: 100%;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        margin-top: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    
+    .background{
+        width: 100%;
+        height: 800px;
+        position: absolute;
+        background-color: #242526;
+        z-index: -10;
+    }
+    
+    
+    .prico{
+        height: 970px;
+    }
+    
+                        /* Menu */
+    div.menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0px;
+    }
+    
+    div.profile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    div.profilepic{
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background-size: 16px;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        transition: all 0.2s ease;
+    }
+    
+    span.login{
+        font-size: 16px;
+        transition: all 0.2s ease;
+    }
+    
+    
+    div.menu-info{
+        font-size: 16px;
+        display: flex;
+        gap: 0px;
+    }
+    
+    
+    span.logo-img{
+        font-size: 32px;
+        font-family: "avenir black";
+    }
+
+    .hide-menu{
+        display: none;
+    }
+    
+    
+    
+                        /* Header */
+    div.header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+    }
+    
+    .badge{
+        height: 80px;
+    }
+    
+    .badge img{
+        height:100%;
+        width:auto;
+    }
+
+    div.header-info{
+        display:flex;
+        min-width:auto;
+        max-width: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    span.header-title-align{
+        width: 100%;
+        height: auto;
+        display: flex;
+        word-wrap: break-word;
+    }
+    
+    div.header-title{
+        margin-top: 0px;
+        width: 65%;
+        text-align: center;
+        word-wrap: break-word;
+    }
+    
+    span.header-title-info{
+        font-size: 32px;
+        font-family: "avenir heavy";
+    }
+    
+    span.title-box{
+        width:fit-content;
+        display: inline-flex;
+        justify-content:center;
+        align-items:center;
+        white-space: nowrap;
+        margin-right: 8px;
+    }
+    
+    div.box{
+        width: 140px;
+        height:50px;
+        position:absolute;
+        z-index:-1;
+        rotate:-2deg;
+    }
+    
+    span.header-subtitle-info{
+        font-size: 18px;
+        opacity: 0.5;
+        margin-top: 16px;
+        font-family: "avenir heavy";
+    }
+    
+    .header-desc{
+        margin-top: 48px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        row-gap: 8px;
+    }
+    
+    span.desc{
+        font-size: 14px;
+        font-family: 'avenir heavy'
+    }
+    
+    .btn{
+        width: 288px;
+        height:56px;
+        font-size:14px;
+        padding-right:16px;
+        border-radius: 8px;
+        font-family: 'Avenir Heavy';
+        border:0px solid;
+        cursor:pointer;
+        transition: all 0.2s ease;
+    
+    }
+    
+    .user{
+        width: 48px;
+        height: 48px;
+        border-radius: 100%;
+        margin-right: -24px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .review{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 40px;
+    }
+
+    .review-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .stars{
+        display:flex;
+    }
+    
+    .fa-star, .fa{
+        width: 20px;
+        height: 20px;
+        font-size: large;
+    }
+    
+                        /* Sponser */
+    .sponser{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sponsers-imgs{
+        display: flex;
+        align-items:start;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-right: 24px;
+    }
+    
+    .sponser-img{
+        width: auto;
+        filter:saturate(0);
+        transition: all 0.3s ease;
+    
+    }
+    
+    .sponser-info{
+        font-size: 12px;
+        opacity: 0.5;
+        transition: all 0.3s ease;
+    }
+    
+    .x{
+        height:32px;
+        opacity: 0.7;
+        filter:contrast(.3);
+    }
+    
+    .facebook{
+        height:20px
+    }
+    
+    .instagram{
+        height:30px
+    }
+    
+    .facebook:hover,.instagram:hover{
+        filter:saturate(1);
+        cursor: pointer;
+    
+    }
+    
+    .x:hover{
+        filter:contrast(1);
+        opacity: 1;
+        cursor: pointer;
+    
+    }
+    
+    hr.site-line{
+        opacity: 0.04;
+        width: 100%;
+        position: absolute;
+        left:0%;
+    }
+    
+    a{
+        transition: all 0.2s ease;
+    }
+    
+    a:link { 
+        text-decoration: none;
+    }
+    
+    a:visited { 
+        text-decoration: none;
+    }
+
+    a:active { 
+        text-decoration: none;
+    }
+    
+    
+    
+                        /* About */
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .about-header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .about-header-main{
+        font-family: "avenir black";
+        font-size: 32px;
+    }
+    
+    .about-header-submain{
+        font-size: 16px;
+        opacity: 0.5;
+    }
+    
+    .about-block{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 80px;
+        gap: 24px;
+    }
+    
+    .about-block-img{
+        width: 100%;
+        height:500px;
+        min-width: none;
+        max-width: none;
+        border-radius: 16px;
+    }
+    
+    .img1{
+        background-size: cover;
+        background-position:center;
+        overflow: hidden;
+    
+    }
+    
+    .img2{
+        background-size: cover;
+        background-position:center;
+    }
+    
+    .img3{
+        background-size: cover;
+        background-position:center;
+    }
+    
+    .about-block-info{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .about-block-info-badge{
+        font-size: 18px;
+        font-family: "avenir heavy";
+    }
+    
+    .about-block-info-main{
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+    }
+    
+    .block-main1{
+        font-size: 24px;
+        font-family: "avenir black";
+    }
+    
+    .block-main2{
+        font-size: 16px;
+        opacity: 0.5;
+    }
+    
+    .about-block-info-CTA{
+        margin-top: 40px;
+    }
+    
+    
+                        /* Apps */
+    .apps{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .apps-main{
+        width: 100%;
+        height: 150px;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+    
+    .apps-header{
+        font-size: 24px;
+        font-family: "avenir black";
+    }
+    
+    .apps-imgs{
+        display: flex;
+        column-gap: 16px;
+    }
+    
+    .apple, .googleplay{
+        width: 160px;
+    }
+    
+                        /* Pricing */
+    .price{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "avenir black";
+    }
+    
+    .price-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .header-main{
+        font-size: 32px;
+        font-family: "avenir black";
+    }
+    
+    .price-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+    
+    .price-card{
+        width: 100%;
+        max-width:none;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-top: 32px;
+    }
+
+    .price-price{
+        margin-top: 0px;
+    }
+    
+    .price1{
+        font-size: 16px;
+        opacity: 0.5;
+    }
+    
+    .price2{
+        font-size: 48px;
+    }
+    
+    .price3{
+        font-size: 12px;
+        opacity: 0.5;
+    }
+    
+    .price-feature{
+        display: flex;
+        flex-direction: column;
+        margin-top: 8px;
+        row-gap: 12px;
+    }
+    
+    .feature{
+        display: flex;
+    }
+    
+    .feature-img{
+        width: 24px;
+        height: 24px;
+    }
+    
+    .feature-desc{
+        margin-right: 8px;
+    }
+    
+    .price-btn{
+        width: 100%;
+        margin-top: 48px;
+    }
+    
+    .price-btn-btn{
+        width: 100%;
+    }
+    
+    .top-badge{
+        width: 100px;
+        height: auto;
+        padding: 8px;
+        border-radius: 100px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -48px;
+    }
+    
+    .background{
+        width: 100%;
+        height: 600px;
+        position: absolute;
+        background-color: #242526;
+        z-index: -10;
+    }
+    
+    .prico{
+        height: 2070px;
+    }
+    
+                        /* FAQ */
+    .FAQ{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .FAQ-main{
+        font-size: 32px;
+        font-family: "avenir black";
+    }
+    
+    .FAQ-contant{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    
+    .FAQ-container{
+        margin-top: 32px;
+        width: 100%;
+    }
+    
+    .FAQ-open{
+        width: 40px;
+        height: 40px;
+        transition: all 0.5 ease;
+    }
+    
+    .FAQ-desc{
+        font-size: 18px;
+        margin-right: 8px;
+    }
+    
+    hr.FAQ-line{
+        width: 100%;
+    }
+    
+    .FAQ-btn{
+        cursor: pointer;
+        border:none;
+        outline: none;
+        background-color: transparent;
+    }
+    
+    .FAQ-hiden{
+        opacity: 0;
+        overflow: hidden;
+        transition: all 0.5 ease;
+        max-height: 0;
+    
+    }
+    
+    
+    .FAQ-hiden.show{
+        max-height: 200px; 
+        opacity: 1;
+        padding:0px 15px 30px 15px;
+    }
+    
+    .FAQ-img.open{
+        transform: rotate(180deg);
+    }
+    
+    
+    
+                        /* Buy CTA */
+    .buyCTA{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .CTA-main{
+        width:100%;
+        height: 200px;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 24px;
+    }
+    
+    .CTA-desc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .CTA-header{
+        font-size: 24px;
+        font-family: "avenir black";
+    }
+    
+    .CTA-subheader{
+        font-size: 14px;
+        opacity: 0.5;
+        font-family: "avenir heavy";
+    }
+    
+    .CTA-btn-btn{
+        opacity: 1;
+        transition: all 0.3s ease;
+    }
+    
+    .CTA-btn-btn:hover{
+        filter: brightness(0.95);
+    }
+    
+                        /* Footer */
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+    
+    .footer-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        gap: 24px;
+    }
+    
+    .links{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .links .link{
+        margin-top: 8px;
+    }
+    
+    .link-header{
+        font-size: 18px;
+        opacity: 0.5;
+    }
+    
+    .link-cop{
+        font-size: 14px;
+    }
+    
+    .link-desc{
+        font-size: 14px;
+    }
+    
+    .linko{
+        display: flex;
+        gap: 16px;
+    }
+
+    .link-social{
+        width: 32px;
+        height: 32px;
+    }
+
+    .bg-footer{
+        height: 50%;
+    }
+
+    #Burger-icon{
+        display: block;
+    }
+
+
+    .faq-background{
+        height: 1900px;
+    }
+}

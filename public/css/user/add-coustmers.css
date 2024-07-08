@@ -1,0 +1,247 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    max-width: 900px;
+    height: 100%;
+    color: rgba(var(--clr-text));
+}
+
+#Main{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+#Coustmers{
+    overflow-y: auto;
+    height:fit-content;
+}
+
+::-webkit-scrollbar{
+    width: 16px;
+
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgba(var(--clr-main));
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(rgba(var(--clr-cta)), rgba(var(--clr-ctaHover)));
+    border-radius: 10px;
+}
+
+.add-coustmer{
+    width: fit-content;
+    font-family: "avenir heavy";
+    padding: 4px 20px 4px 20px;
+    border: 0px;
+    border-radius: 8px;
+    background-color: rgba(var(--clr-cta));
+    color: rgba(var(--clr-text));
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.add-coustmer:hover {
+    background-color: rgba(var(--clr-ctaHover));
+}
+
+#InfoDiv{
+    width: 100%;
+    height: 100%;
+    padding: 32px;
+    background-color: rgba(var(--clr-main), 0.7);
+    border: 1px solid;
+    border-radius: 24px;
+    border-image: radial-gradient( rgb(255, 255, 255), rgba(255, 255, 255, 0)) 1;
+    box-shadow: 0px 4px 20px 0px rgba(var(--clr-shadow));
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+                    /*  Links  */
+a{
+    color: rgba(var(--clr-text));
+}
+
+a:link { 
+    text-decoration: none;
+}
+
+a:visited { 
+    text-decoration: none;
+}
+
+a:hover { 
+    text-decoration: none;
+}
+
+a:active { 
+    text-decoration: none;
+}
+
+.sidebar ul li a.coustmers-nav {
+    background-color: rgba(162, 162, 162, 0.3);
+    color: white;
+}
+
+.sidebar ul li a.coustmers-nav:hover {
+    background-color: rgba(162, 162, 162, 0.5);
+    color: white;
+}
+
+.coustmers-img{
+    filter: brightness(10);
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-h1{
+    font-size: 32px;
+    font-family: "avenir black";
+}
+
+form{
+    display: grid;
+    justify-items: auto;
+    align-items: center;
+    grid-template-columns: 49% 49%;
+    column-gap: 2%;
+    row-gap: 16px;
+}
+
+.lg{
+    grid-column: 1 / 3;
+}
+
+input, select{
+    width: 100%;
+    background-color: rgba(var(--clr-second), 1);
+    outline: none;
+    border: 1px solid rgba(var(--clr-text), 0.3);
+    border-radius: 8px;
+    padding: 8px;
+    margin-top: 8px;
+    font-family: "avenir regular";
+    color: rgba(var(--clr-text));
+    transition: all 0.2s ease;
+}
+
+input:hover, select:hover{
+    background-color: rgba(var(--clr-second), 0.8);
+}
+
+input:focus{
+    background-color: rgba(var(--clr-second), 0.3);
+}
+
+.btn{
+    grid-column: 1 / 3;
+    margin-top: 50px;
+}
+
+.profilePic{
+    grid-column: 1 / 3;
+    justify-self: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 250px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(var(--clr-second), 0.5);
+    transition: all 0.2s ease;
+}
+
+.profilePic:hover{
+    background-color: rgba(var(--clr-second));
+}
+
+input[type="file"]{
+    position: absolute;
+    border-radius: 2555px;
+    cursor: pointer;
+    width: 10000%;
+    height: 10000%;
+    opacity: 0;
+}
+
+button{
+    background-color: rgba(var(--clr-cta));
+    border: 0px;
+    border-radius: 8px;
+    padding: 8px;
+    font-family: "avenir heavy";
+    color: rgba(var(--clr-text));
+    width: 100%;
+    height: 56px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover{
+    background-color: rgba(var(--clr-ctaHover));
+}
+
+.back{
+    cursor: pointer;
+}
+
+hr{
+    grid-column: 1 / 3;
+    opacity: 0.5;
+    margin-top: 24px;
+}
+
+@media screen and (max-width:768px) {
+    #Main{
+        width: 100%;
+        padding: 0px;
+    }
+
+    #InfoDiv{
+        height: fit-content;
+        padding:16px;
+    }
+
+    .main-content{
+        padding:0px;
+    }
+
+    #Coustmers{
+        overflow-y: auto;
+        height:fit-content;
+    }
+
+    .profilePic{
+        width: 150px;
+        height: 150px;
+    }
+}

@@ -1,0 +1,561 @@
+#container{
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 100%;
+    color: rgba(var(--clr-text));
+}
+
+                /*  Main Boxes  */
+#boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-end;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    gap: 32px;
+}
+
+.navbox{
+    width: 450px;
+    height: 450px;
+    padding: 32px;
+    background-color: rgba(var(--clr-second),0.2);
+    border: 1px solid;
+    border-radius: 24px;
+    border-image: radial-gradient( rgb(255, 255, 255), rgba(255, 255, 255, 0)) 1;
+    box-shadow: 0px 4px 20px 0px rgb(0, 0, 0, .25);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.3s;
+
+}
+
+.navbox:hover{
+    background-color:  rgba(46, 47, 48, 0.2);
+    cursor: pointer;
+}
+
+                /*  Boxes Text  */
+.text{
+    display: block;
+}
+
+.textheader{
+    font-family:'Avenir Heavy';
+    font-size: 48px;
+}
+
+.desc{
+    font-family: 'Avenir Regular';
+    font-size: 24px;
+    opacity: 0.3;
+}
+
+                /*  Boxes Image  */
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 270px;
+}
+
+.ico{
+    width: 220px;
+    height: 220px;
+}
+
+#multigym{
+    width: 370px;
+}
+
+                /*  Menu  */
+#menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#landmark{
+    font-family: 'Avenir Black';
+    font-size: 32px;
+}
+
+                /*  Profile  */
+#profile{
+    display: flex;
+    flex-direction: row;
+    line-height: 20px;
+    align-items: center;
+    margin: 32px;
+}
+
+#pic{
+    width: 56px;
+    height: 56px;
+    border-radius: 150px;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin-left: 8px;
+}
+
+
+#name{
+    color: rgba(var(--clr-text));
+    font-family: 'avenir regular';
+    font-size: 16px;
+}
+
+#logout{
+    color: rgba(var(--clr-text))white;
+    font-family: 'avenir regular';
+    opacity: 0.4;
+    font-size: 16px;
+    transition: 0.3s;
+
+}
+
+#logout:hover { 
+    opacity: 0.5; 
+    cursor: pointer;
+}
+
+a{
+    color: rgba(var(--clr-text));
+}
+
+a:link { 
+    text-decoration: none;
+}
+a:visited { 
+    text-decoration: none;
+}
+a:hover { 
+    text-decoration: none;
+}
+a:active { 
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 1536px) { 
+    #container{
+        max-width: 1280px;
+    }
+
+                /*  Main Boxes  */
+    #boxes{
+        gap: 24px;
+    }
+    
+    .navbox{
+        width: 400px;
+        height: 400px;
+        padding: 24px;
+    }
+
+                    /*  Boxes Text  */
+    .textheader{
+        font-size: 40px;
+    }
+
+    .desc{
+        font-size: 22px;
+    }
+
+    
+                /*  Boxes Image  */
+    .image{
+        height: 240px;
+    }
+
+    .ico{
+        width: 200px;
+        height: 200px;
+    }
+
+    #multigym{
+        width: 350px;
+    }
+
+                /*  Menu  */
+    #landmark{
+        font-size: 32px;
+    }
+
+                /*  Profile  */
+    #profile{
+        line-height: 20px;
+        margin: 32px;
+    }
+
+    #pic{
+        width: 56px;
+        height: 56px;
+        margin-left: 8px;
+    }
+
+    #name{
+        font-size: 16px;
+    }
+
+    #logout{
+        opacity: 0.4;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1280px) { 
+    #container{
+        max-width: 1024px;
+    }
+
+                /*  Main Boxes  */
+    #boxes{
+        gap: 20px;
+    }
+    
+    .navbox{
+        width: 320px;
+        height: 320px;
+        padding: 20px;
+    }
+
+                    /*  Boxes Text  */
+    .textheader{
+        font-size: 32px;
+    }
+
+    .desc{
+        font-size: 18px;
+    }
+
+    
+                /*  Boxes Image  */
+    .image{
+        height: 200px;
+    }
+
+    .ico{
+        width: 150px;
+        height: 150px;
+    }
+
+    #multigym{
+        width: 280px;
+    }
+
+                /*  Menu  */
+    #landmark{
+        font-size: 32px;
+    }
+
+                /*  Profile  */
+    #profile{
+        line-height: 20px;
+        margin: 32px;
+    }
+
+    #pic{
+        width: 56px;
+        height: 56px;
+        margin-left: 8px;
+    }
+
+    #name{
+        font-size: 16px;
+    }
+
+    #logout{
+        opacity: 0.4;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1024px) { 
+    #container{
+        max-width: 768px;
+    }
+
+                /*  Main Boxes  */
+    #boxes{
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .navbox{
+        width: 500px;
+        height: 250px;
+        padding: 20px;
+    }
+
+                    /*  Boxes Text  */
+    .textheader{
+        font-size: 32px;
+    }
+
+    .desc{
+        font-size: 18px;
+    }
+
+    
+                /*  Boxes Image  */
+    .image{
+        height: 200px;
+    }
+
+    .ico{
+        width: 120px;
+        height: 120px;
+    }
+
+    #multigym{
+        width: 250px;
+    }
+
+                /*  Menu  */
+    #landmark{
+        font-size: 32px;
+    }
+
+                /*  Profile  */
+    #profile{
+        line-height: 20px;
+        margin: 32px;
+    }
+
+    #pic{
+        width: 56px;
+        height: 56px;
+        margin-left: 8px;
+    }
+
+    #name{
+        font-size: 16px;
+    }
+
+    #logout{
+        opacity: 0.4;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    #container{
+        max-width: 640px;
+    }
+
+                /*  Main Boxes  */
+    #boxes{
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .navbox{
+        width: 450px;
+        height: 220px;
+        padding: 20px;
+    }
+
+                    /*  Boxes Text  */
+    .textheader{
+        font-size: 32px;
+    }
+
+    .desc{
+        font-size: 18px;
+    }
+
+    
+                /*  Boxes Image  */
+    .image{
+        height: 200px;
+    }
+
+    .ico{
+        width: 100px;
+        height: 100px;
+    }
+
+    #multigym{
+        width: 210px;
+    }
+
+                /*  Menu  */
+    #landmark{
+        font-size: 32px;
+    }
+
+                /*  Profile  */
+    #profile{
+        line-height: 20px;
+        margin: 32px;
+    }
+
+    #pic{
+        width: 56px;
+        height: 56px;
+        margin-left: 8px;
+    }
+
+    #name{
+        font-size: 14px;
+    }
+
+    #logout{
+        opacity: 0.4;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 640px) { 
+    #container{
+        max-width: 475px;
+    }
+
+                /*  Main Boxes  */
+    #boxes{
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .navbox{
+        width: 450px;
+        height: 220px;
+        padding: 20px;
+    }
+
+                    /*  Boxes Text  */
+    .textheader{
+        font-size: 32px;
+    }
+
+    .desc{
+        font-size: 18px;
+    }
+
+    
+                /*  Boxes Image  */
+    .image{
+        height: 200px;
+    }
+
+    .ico{
+        width: 100px;
+        height: 100px;
+    }
+
+    #multigym{
+        width: 210px;
+    }
+
+                /*  Menu  */
+    #landmark{
+        font-size: 32px;
+    }
+
+                /*  Profile  */
+    #profile{
+        line-height: 20px;
+        margin: 32px;
+    }
+
+    #pic{
+        width: 56px;
+        height: 56px;
+        margin-left: 8px;
+    }
+
+    #name{
+        font-size: 14px;
+    }
+
+    #logout{
+        opacity: 0.4;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 475px) { 
+    #container{
+        width: 100%;
+        margin-right: -8px;
+        margin-top: -8px;
+    }
+
+                /*  Main Boxes  */
+    #boxes{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 90%;
+    }
+    
+    .navbox{
+        width: 100%;
+        height: 200px;
+        padding: 16px;
+    }
+
+                    /*  Boxes Text  */
+    .textheader{
+        font-size: 32px;
+    }
+
+    .desc{
+        font-size: 18px;
+    }
+
+    
+                /*  Boxes Image  */
+    .image{
+        height: 200px;
+    }
+
+    .ico{
+        width: 80px;
+        height: 80px;
+    }
+
+    #multigym{
+        width: 150px;
+    }
+
+                /*  Menu  */
+    #landmark{
+        font-size: 32px;
+    }
+
+                /*  Profile  */
+    #profile{
+        line-height: 20px;
+        margin: 32px;
+    }
+
+    #pic{
+        width: 56px;
+        height: 56px;
+        margin-left: 8px;
+    }
+
+    #name{
+        font-size: 14px;
+    }
+
+    #logout{
+        opacity: 0.4;
+        font-size: 14px;
+    }
+}
